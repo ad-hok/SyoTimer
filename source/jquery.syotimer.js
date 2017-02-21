@@ -15,7 +15,13 @@
             minute: ['minute', 'minutes'],
             hour: ['hour', 'hours'],
             day: ['day', 'days']
-        }
+        },
+        esp: {
+            second: ['segundo', 'segundos'],
+            minute: ['minuto', 'minutos'],
+            hour: ['hora', 'horas'],
+            day: ['dia', 'dias'],
+        },
     };
 
     const DEFAULTS = {
@@ -327,6 +333,8 @@
                     return titles[index];
                 case 'eng':
                     return titles[ ( number == 1 ) ? 0 : 1 ];
+                case 'esp': 
+                        return titles[ ( number == 1 ) ? 0 : 1 ];
             }
         }
 
